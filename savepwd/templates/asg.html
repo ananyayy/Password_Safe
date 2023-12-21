@@ -1,0 +1,68 @@
+	<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Password Safe</title>
+</head>
+<style>
+	body{
+		background-color: #f4f6f0/* cream:F8EFE4 champaagne: #F3EAC0*/;
+	
+	}
+	table , td, th{
+
+		border : 2px solid  black; 
+		border-collapse: collapse;
+	}
+	#head{
+		background-color:#7e86c4/*21B6A8*/
+		
+; /*84c195*/
+		color: black;
+		font-family: 'Times New Roman', Times, serif;
+		
+
+	}
+	#tbl{
+		color: black;
+	}
+	.mem:hover{
+		background-color: powderblue;
+		pointer-events:fill;
+	}
+</style>
+<link rel="icon" type ="text/css" href="https://clipground.com/images/lock-icon-clipart.jpg">	
+<body>
+	<center>
+	
+	  </nav>
+	</nav>
+	<h1 id="head">PASSWORD SAFE</h1>
+		<table border="3px" style="width: 75%;" id="tbl">
+			
+			<th id="head">Update</th>
+				<th id="head">Site Name</th>
+				<th id="head">Password</th>
+				<th id = "head">Delete</th>
+			{% for x in mypwd %}
+			<tr border="3px">
+				
+				<td class="mem"> <a href="update/{{x.id}}">Edit</a></td>
+
+				<td class="mem">{{x.sname}}</td>
+				<td class="mem" >{{x.paswd}}</td>
+				<td class="mem"><a href= "delete/{{x.id}}">Delete</a></td>
+				
+			</tr>
+
+			{% endfor %}
+		</table><br><br>
+		<!--<a href="add/"> Add Another Password</a> -->
+		<button id ="head"><a href="add/"><b>Add New Password</button></a></b>
+	</center>
+	<a href="{% url 'logout' %}"><h2>Logout</h2></a>
+
+
+
+</body>
+</html>

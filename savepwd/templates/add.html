@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <title>
+    Add Page
+  </title>
+    <head>
+
+        </head>
+        <style>
+          body{
+
+            background-color: #f6f8f2;
+          }
+        #sub{
+
+          background-color: #7e86c4;
+        }
+            
+        </style>
+<link rel="icon" type ="text/css" href="https://clipground.com/images/lock-icon-clipart.jpg">	
+
+        <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+    <body>
+        <center>
+            <!--<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+                <nav class="navbar navbar-light" style="text-color: #cb8dc5;">
+                    <!-- Navbar content 
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="add/">Add</a>
+                    </li>
+                    <li class="nav-link" href  = "update/">
+                      <a class="nav-link" href="updaterecord/1" role="button" >Update</a>
+                </li>
+                    
+                  </ul>
+                  
+                </div>
+              </nav>
+              </nav>
+            </nav>
+            <u>-->
+                <div id = "addbody">
+<h1 id="sub">Add Information</h1></u>
+
+<form action="addrecord/" method="post">
+{% csrf_token %}<p>
+<b>
+<h2>Site Name:<br></p></b></h2>
+<input name="sname" placeholder=" Example:gmail,yahoo ">
+<br><br>
+<b>
+<p> <h2>Password:<br></b></h2>
+<input name ="paswd" type="password" >
+<br><br></p>
+<input type="submit" value="Submit" id ="sub" >
+</form>
+</center>
+</head>
+</body>
+</div>
+
+</html>
